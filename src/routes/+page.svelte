@@ -7,7 +7,7 @@
 	// Default to 2025 so the filter is pre-selected on first load. If 2025 is not
 	// present in the available years, the reactive initializer below will fall back
 	// to the first available year from `data`.
-	let currentYear = $state(2025);
+	let currentYear = $state(RED);
 
 	// Initialize currentYear reactively once data is available. This avoids accessing
 	// `data.years[0]` when `data` is undefined during SSR or early renders, which
