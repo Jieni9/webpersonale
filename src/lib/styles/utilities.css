@@ -1,0 +1,16 @@
+.safe-area {
+	padding-inline: var(--size-10);
+}
+
+/* Responsive adjustments for safe area padding */
+@media (max-width: 768px) {
+	.safe-area {
+		padding-inline: var(--size-5); /* 40px */
+	}
+}
+
+@media (max-width: 480px) {
+	.safe-area {
+		padding-inline: var(--size-4); /* 16px */
+	}
+}

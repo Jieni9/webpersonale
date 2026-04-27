@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv@0.15.1 create --template minimal --types jsdoc --install npm websitemio
+npx sv@0.15.1 create --template minimal --types jsdoc --install npm 2026-02-sveltekit--reference
 ```
 
 ## Developing
