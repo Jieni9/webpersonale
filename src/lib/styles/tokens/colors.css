@@ -33,7 +33,7 @@
 		--color-link: var(--hex-brand-600);
 
 		--color-filter--hover: var(--hex-neutral-100);
-		--color-filter--selected: var(--hex-brand-500);
+		--color-filter--selected: var(--hex-brand-100);
 	}
 
 	@media screen and (prefers-color-scheme: dark) {

@@ -1,5 +1,5 @@
 :root {
-	--font-primary:   "Open Sans", sans-serif;
+	--font-primary:   "Helvetica", sans-serif;
 
 	font-feature-settings: "liga" 1, "calt" 1;
 }
