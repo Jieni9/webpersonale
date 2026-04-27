@@ -1,14 +1,14 @@
 :root {
 	/* HEX Colors */
-	--hex-brand-100: #FEF7CB;
-	--hex-brand-200: #FEEC98;
-	--hex-brand-300: #FDDE65;
-	--hex-brand-400: #FCD03F;
-	--hex-brand-500: #FBBA00;
-	--hex-brand-600: #D79A00;
-	--hex-brand-700: #B47C00;
-	--hex-brand-800: #916000;
-	--hex-brand-900: #784C00;
+	--hex-brand-100: #CCD1FF;
+	--hex-brand-200: #99ABFF;
+	--hex-brand-300: #667FFF;
+	--hex-brand-400: #3F5CFF;
+	--hex-brand-500: #0023FF;
+	--hex-brand-600: #001ADB;
+	--hex-brand-700: #0013B7;
+	--hex-brand-800: #000D93;
+	--hex-brand-900: #00097A;
 
 	--hex-neutral-50:  #EDEEEF;
 	--hex-neutral-100: #D8DADD;
