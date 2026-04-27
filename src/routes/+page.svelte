@@ -7,7 +7,7 @@
 	// Default to 2025 so the filter is pre-selected on first load. If 2025 is not
 	// present in the available years, the reactive initializer below will fall back
 	// to the first available year from `data`.
-	let currentYear = $state(RED);
+	let currentYear = $state(2025);
 
 	// Initialize currentYear reactively once data is available. This avoids accessing
 	// `data.years[0]` when `data` is undefined during SSR or early renders, which
@@ -41,9 +41,7 @@
 
 <section class="safe-area hero">
 	<h1>
-		Il <span style="font-weight: 700; font-style: italic;">MEI - Meeting Etichette Indipendenti</span> è una manifestazione musicale che raduna 
-		le principali produzioni discografiche indipendenti ed emergenti italiane a Faenza.
-		L’evento si svolge durante la prima settimana di ottobre, tutti gli anni, dal 1995.
+		CHROMOSTHESIA is an experimental gallery where the boundary between audio and optics dissolves. Using a precise digital deconstruction protocol, extracting specific image regions through color range and brightness thresholds, I translated the emotional weight of music into its rawest visual form.
 	</h1>
 </section>
 
@@ -65,8 +63,8 @@
 
 		h1 {
 			/* fluid font-size: min size, responsive vw, max token */
-			font-size: clamp(1.6rem, 4.5vw, var(--size-7));
-			max-width: 35ch;
+			font-size: clamp(1.6rem, 4.5vw, var(--size-6));
+			max-width: 43ch;
 		}
 	}
 

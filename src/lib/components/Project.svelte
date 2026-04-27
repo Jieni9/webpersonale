@@ -55,7 +55,7 @@
 
 	.thumbnail {
 		position: relative;
-		aspect-ratio: 16/10;
+		aspect-ratio: 1/1;
 		overflow: hidden;
 		border-radius: var(--size-3);
 
