@@ -6,8 +6,8 @@
 	<Link class="brand" title="CHROMESTHESIA" ref="/" />
 
 	<nav>
-		<Link class="nav-link" title="About" ref="/" />
-		<Link class="nav-link" title="@yeehjieni" ref="/" />
+		<Link class="nav-link" title="RESEARCH" ref="/" />
+		<Link class="nav-link" title="ABOUT" ref="/" />
 	</nav>
 </header>
 
@@ -49,15 +49,15 @@
 
 	/* Typography variants for header links */
 	:global(.brand) {
-		font-family: "Open Sans Condensed", var(--font-primary);
-		font-weight: 800; /* ExtraBold */
+		font-family: "Helvetica", var(--font-primary);
+		font-weight: 300; /* Light */
 		letter-spacing: -0.01em;
 		font-size: 2rem;
 	}
 
 	:global(.nav-link) {
 		font-family: var(--font-primary);
-		font-weight: 600; /* Semibold */
+		font-weight: 300; /* Light */
 		font-size: 1.5rem;
 	}
 </style>

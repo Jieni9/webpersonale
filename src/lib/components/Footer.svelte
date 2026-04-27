@@ -1,21 +1,14 @@
-<script>
-	import logo from "$lib/assets/mei-logo2.png";
-</script>
-
 <footer class="safe-area">
-	<img src={logo} alt="MEI - Meeting Etichette Indipendenti" />
+    @yeehjieni
 </footer>
 
 <style>
-	footer {
-		padding-block: var(--size-4);
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	img {
-		height: var(--size-9);
-	}
+    footer {
+        padding-top: var(--size-8); 
+        padding-bottom: var(--size-4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--size-4); 
+    }
 </style>
