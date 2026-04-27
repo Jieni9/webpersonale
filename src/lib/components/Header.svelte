@@ -3,11 +3,11 @@
 </script>
 
 <header class="safe-area">
-	<Link class="brand" title="Mei Meeting" ref="/" />
+	<Link class="brand" title="CHROMESTHESIA" ref="/" />
 
 	<nav>
-		<Link class="nav-link" title="Home" ref="/" />
-		<Link class="nav-link" title="Blog" ref="/" />
+		<Link class="nav-link" title="About" ref="/" />
+		<Link class="nav-link" title="@yeehjieni" ref="/" />
 	</nav>
 </header>
 
