@@ -57,7 +57,8 @@
 		position: relative;
 		aspect-ratio: 1/1;
 		overflow: hidden;
-		border-radius: var(--size-3);
+		border-radius: var(--size-6);
+		
 
 		/* allow the thumbnail to shrink below content size when grid columns narrow */
 		min-height: 0;

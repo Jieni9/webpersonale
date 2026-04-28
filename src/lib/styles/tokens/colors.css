@@ -10,16 +10,16 @@
 	--hex-brand-800: #000D93;
 	--hex-brand-900: #00097A;
 
-	--hex-neutral-50:  #EDEEEF;
-	--hex-neutral-100: #D8DADD;
-	--hex-neutral-200: #BBBEC3;
-	--hex-neutral-300: #9FA3AA;
-	--hex-neutral-400: #848992;
-	--hex-neutral-500: #666B72;
-	--hex-neutral-600: #4F5358;
-	--hex-neutral-700: #35373B;
-	--hex-neutral-800: #2A2C2F;
-	--hex-neutral-900: #030404;
+	--hex-neutral-50:  #FAFAFA;
+	--hex-neutral-100: #EDEEEF;
+	--hex-neutral-200: #D3D5D7;
+	--hex-neutral-300: #B9BDC1;
+	--hex-neutral-400: #999EA5;
+	--hex-neutral-500: #797F88;
+	--hex-neutral-600: #5F646A;
+	--hex-neutral-700: #3E4246;
+	--hex-neutral-800: #181A1B;
+	--hex-neutral-900: #060606;
 
 	/* Named Colors */
 	@media screen and (prefers-color-scheme: light) {
