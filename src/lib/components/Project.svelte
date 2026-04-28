@@ -45,7 +45,7 @@
         gap: var(--size-2);
         max-width: 520px; 
         margin-inline: auto;
-		padding-bottom: var(--size-6);
+		padding: var(--size-3);
 
 		&:hover {
 			.veil {
