@@ -1,6 +1,6 @@
 ---
-title: Snooze
-subtitle: Color extraction study
+title: SOS
+subtitle: 2022
 year: 2023
 order: 1
 link: https://www.youtube.com/watch?v=Sv5yCzPCkv8
