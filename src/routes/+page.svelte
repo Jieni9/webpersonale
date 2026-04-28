@@ -4,10 +4,8 @@
 
 	const { data } = $props();
 
-	// Default to BLUE (2025) so the filter is pre-selected on first load
 	let currentCategory = $state('BLUE');
 
-	// Initialize currentCategory reactively once data is available
 	let _initCurrent = $derived.by(() => {
 		if (!data?.years?.length) return null;
 
@@ -22,7 +20,7 @@
 		return null;
 	});
 
-	// Compute projects defensively: return an empty array until data and currentCategory exist
+	
 	let projects = $derived.by(() => {
 		if (!data?.years?.length) return [];
 
@@ -111,7 +109,7 @@
 		}
 
 		.hero h1 {
-			font-size: var(--size-5);
+			font-size: var(--size-4);
 		}
 
 		.projects {
