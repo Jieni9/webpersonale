@@ -6,9 +6,9 @@ export default class Project {
 	static yearToCategory(year) {
 		/** @type {Record<number, string>} */
 		const mapping = {
-			2023: 'RED',
+			2023: 'BLUE',
 			2024: 'YELLOW',
-			2025: 'BLUE'
+			2025: 'RED'
 		};
 		return mapping[year] ?? String(year);
 	}
@@ -28,14 +28,9 @@ export default class Project {
 			const yearA = a.data.year;
 			const yearB = b.data.year;
 
-			// Primary sort: year (desc)
 			if (yearA > yearB) return -1;
 			if (yearA < yearB) return 1;
 
-			// If same year, allow an explicit numeric `order` in frontmatter to
-			// control placement (lower numbers come first). If `order` is missing
-			// for one or both items, treat missing as Infinity so explicit orders
-			// come before unspecified ones.
 			const orderA = typeof a.data.order === 'number' ? a.data.order : Infinity;
 			const orderB = typeof b.data.order === 'number' ? b.data.order : Infinity;
 

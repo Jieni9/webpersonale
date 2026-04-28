@@ -20,7 +20,7 @@
 		return null;
 	});
 
-	
+
 	let projects = $derived.by(() => {
 		if (!data?.years?.length) return [];
 
@@ -31,7 +31,7 @@
 
 <section class="safe-area hero">
 	<h1>
-		CHROMOSTHESIA is an experimental gallery where the boundary between audio and optics dissolves. Using a precise digital deconstruction protocol, extracting specific image regions through color range and brightness thresholds, I translated the emotional weight of music into its rawest visual form.
+		Chromosthesia is an experimental gallery where the boundary between audio and optics dissolves. Using a precise digital deconstruction protocol, extracting specific image regions through color range and brightness thresholds, I translated the emotional weight of music into its rawest visual form.
 	</h1>
 </section>
 
