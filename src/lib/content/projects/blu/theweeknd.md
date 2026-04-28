@@ -1,5 +1,6 @@
 ---
 title: Starboy
+subtitle: Audio-visual synthesis
 year: 2023
 order: 2
 link: https://www.youtube.com/watch?v=plnfIj7dkJE

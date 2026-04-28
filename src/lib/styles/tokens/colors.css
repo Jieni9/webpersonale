@@ -1,15 +1,4 @@
 :root {
-	/* HEX Colors */
-	--hex-brand-100: #CCD1FF;
-	--hex-brand-200: #99ABFF;
-	--hex-brand-300: #667FFF;
-	--hex-brand-400: #3F5CFF;
-	--hex-brand-500: #0023FF;
-	--hex-brand-600: #001ADB;
-	--hex-brand-700: #0013B7;
-	--hex-brand-800: #000D93;
-	--hex-brand-900: #00097A;
-
 	--hex-neutral-50:  #FAFAFA;
 	--hex-neutral-100: #EDEEEF;
 	--hex-neutral-200: #D3D5D7;
@@ -30,10 +19,9 @@
 		--color-ink-secondary: var(--hex-neutral-500);
 		--color-ink-inverted: var(--hex-neutral-50);
 
-		--color-link: var(--hex-brand-600);
 
 		--color-filter--hover: var(--hex-neutral-100);
-		--color-filter--selected: var(--hex-brand-100);
+		--color-filter--selected: var(--hex-neutral-100);
 	}
 
 	@media screen and (prefers-color-scheme: dark) {
@@ -44,9 +32,8 @@
 		--color-ink-secondary: var(--hex-neutral-400);
 		--color-ink-inverted: var(--hex-neutral-900);
 
-		--color-link: var(--hex-brand-500);
 
 		--color-filter--hover: var(--hex-neutral-800);
-		--color-filter--selected: var(--hex-brand-600);
+		--color-filter--selected: var(--hex-neutral-800);
 	}
 }

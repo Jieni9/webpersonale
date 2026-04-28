@@ -1,4 +1,13 @@
 export default class Project {
+	static yearToCategory(year) {
+		const mapping = {
+			2023: 'RED',
+			2024: 'YELLOW',
+			2025: 'BLUE'
+		};
+		return mapping[year] || year;
+	}
+
 	static async all() {
 		const projects = await Promise.all(
 			Object.entries(import.meta.glob("./projects/**/*.md")).map(async ([path, resolver]) => {

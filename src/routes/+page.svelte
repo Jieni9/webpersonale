@@ -4,37 +4,29 @@
 
 	const { data } = $props();
 
-	// Default to 2025 so the filter is pre-selected on first load. If 2025 is not
-	// present in the available years, the reactive initializer below will fall back
-	// to the first available year from `data`.
-	let currentYear = $state(2025);
+	// Default to BLUE (2025) so the filter is pre-selected on first load
+	let currentCategory = $state('BLUE');
 
-	// Initialize currentYear reactively once data is available. This avoids accessing
-	// `data.years[0]` when `data` is undefined during SSR or early renders, which
-	// causes a runtime exception (500 Internal Server Error).
-	// When `data` becomes available, initialize `currentYear` (only once).
+	// Initialize currentCategory reactively once data is available
 	let _initCurrent = $derived.by(() => {
 		if (!data?.years?.length) return null;
 
-		const available = data.years.map((y) => y.number);
+		const available = data.years.map((y) => y.category);
 
-		// If currentYear is unset, pick the first available year. If currentYear
-		// is set (we default it to 2025), but that year isn't available in the
-		// dataset, fall back to the first available year.
-		if (currentYear === undefined || currentYear === null) {
-			currentYear = available[0];
-		} else if (!available.includes(currentYear)) {
-			currentYear = available[0];
+		if (currentCategory === undefined || currentCategory === null) {
+			currentCategory = available[0];
+		} else if (!available.includes(currentCategory)) {
+			currentCategory = available[0];
 		}
 
 		return null;
 	});
 
-	// Compute projects defensively: return an empty array until data and currentYear exist.
+	// Compute projects defensively: return an empty array until data and currentCategory exist
 	let projects = $derived.by(() => {
 		if (!data?.years?.length) return [];
 
-		const group = data.years.find((year) => year.number == currentYear);
+		const group = data.years.find((year) => year.category === currentCategory);
 		return group ? group.projects : [];
 	});
 </script>
@@ -47,7 +39,7 @@
 
 <nav class="safe-area filters">
 	{#each data.years as year}
-		<Filter bind:group={currentYear} value={year.number} />
+		<Filter bind:group={currentCategory} value={year.category} label={year.category} />
 	{/each}
 </nav>
 

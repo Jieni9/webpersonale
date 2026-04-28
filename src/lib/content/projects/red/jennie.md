@@ -1,5 +1,6 @@
 ---
 title: Ruby
+subtitle: Digital deconstruction
 year: 2025
 order: 2
 link: https://www.youtube.com/watch?v=aS7al94FVbk

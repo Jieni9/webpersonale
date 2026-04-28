@@ -1,5 +1,6 @@
 ---
 title: Wanna Take This Downtown?
+subtitle: Color psychology study
 year: 2025
 order: 4
 link: https://www.youtube.com/watch?v=mxyucLe9YE4&list=OLAK5uy_mbO-RCaiQFGMr42xtIiZtdaDciEFgAhv4

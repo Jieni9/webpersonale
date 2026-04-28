@@ -1,5 +1,6 @@
 ---
 title: Awaken, My Love!
+subtitle: Experimental visual translation
 year: 2023
 order: 3
 link: https://www.youtube.com/watch?v=nxuzYWcY2O0
