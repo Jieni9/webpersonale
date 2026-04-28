@@ -9,6 +9,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: var(--size-4); 
+        font-size: 1,2rem; 
     }
 </style>

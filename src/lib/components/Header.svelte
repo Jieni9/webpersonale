@@ -52,12 +52,12 @@
 		font-family: "Helvetica", var(--font-primary);
 		font-weight: 300; /* Light */
 		letter-spacing: -0.01em;
-		font-size: 2rem;
+		font-size: 1,2rem;
 	}
 
 	:global(.nav-link) {
 		font-family: var(--font-primary);
 		font-weight: 300; /* Light */
-		font-size: 1.5rem;
+		font-size: 1,2rem;
 	}
 </style>
