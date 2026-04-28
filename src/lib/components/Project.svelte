@@ -42,7 +42,7 @@
     article {
         display: flex;
         flex-direction: column;
-        gap: var(--size-3); /* Spazio tra immagine e testi */
+        gap: var(--size-3);
         text-decoration: none;
         color: inherit;
         width: 100%;
@@ -63,9 +63,8 @@
         aspect-ratio: 1/1;
         overflow: hidden;
         border-radius: var(--size-6);
-        background-color: var(--color-surface-2); /* Fallback colore */
+        background-color: var(--color-surface-2); 
         
-        /* Assicura che l'immagine non si deformi */
         min-height: 0;
 
         .veil {
@@ -91,15 +90,15 @@
     header {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start; /* Allineamento icone in alto */
+        align-items: flex-start;
         gap: var(--size-4);
-        overflow: hidden; /* Taglia l'uscita della freccia */
+        overflow: hidden; 
     }
 
     hgroup {
         display: flex;
         flex-direction: column;
-        gap: 0; /* Spazio gestito dai font */
+        gap: 0; 
         flex: 1;
 
         h3 {
@@ -119,9 +118,9 @@
 
     .arrow {
         transition: transform 0.6s var(--ease-out-quart);
-        transform: translate(-100%, 100%); /* Parte da fuori (basso-sinistra) */
+        transform: translate(-100%, 100%); 
         flex-shrink: 0;
-        padding-top: 2px; /* Allineamento ottico con il testo */
+        padding-top: 2px; 
     }
 
     /* --- RESPONSIVE --- */
@@ -150,7 +149,7 @@
         }
 
         h3 {
-            font-size: 1.1rem; /* Dimensione fissa più leggibile su mobile */
+            font-size: 1.1rem; 
         }
 
         span {
