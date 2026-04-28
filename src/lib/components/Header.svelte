@@ -1,63 +1,80 @@
 <script>
-	import Link from "$lib/components/Link.svelte";
+    import Link from "$lib/components/Link.svelte";
 </script>
 
 <header class="safe-area">
-	<Link class="brand" title="CHROMESTHESIA" ref="/" />
+    <div class="blur-target">
+        <Link class="brand" title="CHROMESTHESIA" ref="/" />
+    </div>
 
-	<nav>
-		<Link class="nav-link" title="RESEARCH" ref="/" />
-		<Link class="nav-link" title="ABOUT" ref="/" />
-	</nav>
+    <nav>
+        <span class="blur-target">
+            <Link class="nav-link" title="RESEARCH" ref="/" />
+        </span>
+        
+        <span class="blur-target">
+            <Link class="nav-link" title="ABOUT" ref="/" />
+        </span>
+    </nav>
 </header>
 
 <style>
-	header {
-		padding-block: var(--size-6);
+    header {
+        padding-block: var(--size-6);
+        display: flex;
+        gap: var(--size-8);
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
-		display: flex;
-		gap: var(--size-8);
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap; /* allow logo/nav to wrap on small screens */
-	}
+    nav {
+        display: flex;
+        gap: var(--size-6);
+        align-items: center;
+    }
 
-	nav {
-		display: flex;
-		gap: var(--size-6);
-		align-items: center;
-	}
+    .blur-target {
+        display: inline-block;
+        transition: filter 0.1s ease;
+    }
 
-	/* Responsive header: stack brand above nav on small screens */
-	@media (max-width: 480px) {
-		header {
-			align-items: flex-start;
-		}
+    .blur-target:hover {
+        filter: blur(1px);
+    }
 
-		:global(.brand) {
-			width: 100%;
-			font-size: var(--size-6);
-		}
+    @media (max-width: 480px) {
+        header {
+            align-items: flex-start;
+        }
 
-		nav {
-			width: 100%;
-			display: flex;
-			gap: var(--size-3);
-			margin-top: var(--size-2);
-		}
-	}
+        :global(.brand) {
+            width: 100%;
+            font-size: var(--size-6);
+        }
 
-	/* Typography variants for header links */
-	:global(.brand) {
-		font-family: "Helvetica", var(--font-primary);
-		font-weight: 300; /* Light */
-		letter-spacing: -0.01em;
-		font-size: 1,2rem;
-	}
+        div.blur-target {
+            width: 100%;
+        }
 
-	:global(.nav-link) {
-		font-family: var(--font-primary);
-		font-weight: 300; /* Light */
-		font-size: 1,2rem;
-	}
+        nav {
+            width: 100%;
+            display: flex;
+            gap: var(--size-3);
+            margin-top: var(--size-2);
+        }
+    }
+
+    :global(.brand) {
+        font-family: "Helvetica", var(--font-primary);
+        font-weight: 300;
+        letter-spacing: -0.01em;
+        font-size: 1.2rem;
+    }
+
+    :global(.nav-link) {
+        font-family: var(--font-primary);
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
 </style>
