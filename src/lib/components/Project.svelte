@@ -43,7 +43,7 @@
 		display: flex;
         flex-direction: column;
         gap: var(--size-2);
-        max-width: 520px; 
+        max-width: 540px; 
         margin-inline: auto;
 		padding: var(--size-3);
 
