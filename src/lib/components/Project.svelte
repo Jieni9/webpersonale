@@ -1,15 +1,15 @@
 <script>
 	import Icon from "./Icon.svelte";
 
-	const { data: project } = $props();
+	const { data } = $props();
 </script>
 
-{#if project.link}
-	<a href={project.link} target="_blank">
-		{@render card(project)}
+{#if data.link}
+	<a href={data.link} target="_blank">
+		{@render card(data)}
 	</a>
 {:else}
-	{@render card(project)}
+	{@render card(data)}
 {/if}
 
 {#snippet card(project)}
@@ -43,9 +43,6 @@
 		display: flex;
         flex-direction: column;
         gap: var(--size-2);
-        max-width: 540px; 
-        margin-inline: auto;
-		padding: var(--size-3);
 
 		&:hover {
 			.veil {
@@ -67,11 +64,9 @@
 
 		.veil {
 			position: absolute;
-			width: 100%;
-			height: 100%;
+			inset: 0;
 			background-color: var(--color-link);
 			mix-blend-mode: soft-light;
-
 			transition: opacity 0.75s var(--ease-out-quart);
 			opacity: 0;
 		}
@@ -88,24 +83,66 @@
 	header {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 		gap: var(--size-4);
-
-		overflow: clip;
 	}
 
 	hgroup {
 		display: flex;
-		align-items: center;
-		gap: var(--size-2);
+		flex-direction: column;
+		gap: var(--size-1);
+		flex: 1;
+
+		h3 {
+			margin: 0;
+		}
 
 		span {
 			color: var(--color-ink-secondary);
+			font-size: var(--size-4);
 		}
 	}
 
 	.arrow {
 		transition: transform 0.75s var(--ease-out-quart);
 		transform: translateY(100%);
+		flex-shrink: 0;
+	}
+
+	/* Responsive adjustments */
+	@media (max-width: 768px) {
+		hgroup {
+			gap: var(--size-2);
+		}
+
+		h3 {
+			font-size: var(--size-5);
+		}
+
+		span {
+			font-size: var(--size-3);
+		}
+	}
+
+	@media (max-width: 480px) {
+		article {
+			gap: var(--size-1);
+		}
+
+		header {
+			gap: var(--size-3);
+		}
+
+		h3 {
+			font-size: var(--size-4);
+		}
+
+		span {
+			font-size: var(--size-2);
+		}
+
+		.thumbnail {
+			border-radius: var(--size-3);
+		}
 	}
 </style>

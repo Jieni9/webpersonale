@@ -43,14 +43,41 @@
         filter: blur(1px);
     }
 
+    :global(.brand) {
+        font-family: "Helvetica", var(--font-primary);
+        font-weight: 300;
+        letter-spacing: -0.01em;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+    }
+
+    :global(.nav-link) {
+        font-family: var(--font-primary);
+        font-weight: 300;
+        font-size: clamp(0.875rem, 2.5vw, 1.2rem);
+    }
+
+    /* Tablet */
+    @media (max-width: 768px) {
+        header {
+            gap: var(--size-5);
+            padding-block: var(--size-5);
+        }
+
+        nav {
+            gap: var(--size-4);
+        }
+    }
+
+    /* Mobile */
     @media (max-width: 480px) {
         header {
             align-items: flex-start;
+            gap: var(--size-3);
+            padding-block: var(--size-4);
         }
 
         :global(.brand) {
             width: 100%;
-            font-size: var(--size-6);
         }
 
         div.blur-target {
@@ -59,22 +86,8 @@
 
         nav {
             width: 100%;
-            display: flex;
             gap: var(--size-3);
             margin-top: var(--size-2);
         }
-    }
-
-    :global(.brand) {
-        font-family: "Helvetica", var(--font-primary);
-        font-weight: 300;
-        letter-spacing: -0.01em;
-        font-size: 1.2rem;
-    }
-
-    :global(.nav-link) {
-        font-family: var(--font-primary);
-        font-weight: 300;
-        font-size: 1.2rem;
     }
 </style>
