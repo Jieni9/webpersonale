@@ -39,8 +39,11 @@
 <style>
 	article {
 		display: flex;
-		flex-direction: column;
-		gap: var(--size-2);
+        flex-direction: column;
+        gap: var(--size-2);
+        max-width: 520px; 
+        margin-inline: auto;
+		padding-bottom: var(--size-6);
 
 		&:hover {
 			.veil {
@@ -58,9 +61,6 @@
 		aspect-ratio: 1/1;
 		overflow: hidden;
 		border-radius: var(--size-6);
-		
-
-		/* allow the thumbnail to shrink below content size when grid columns narrow */
 		min-height: 0;
 
 		.veil {
@@ -75,8 +75,6 @@
 		}
 
 		img {
-			/* absolutely position the image to fully cover the aspect-ratio box
-			   and avoid intrinsic image dimensions forcing a fixed height */
 			position: absolute;
 			inset: 0;
 			width: 100%;
