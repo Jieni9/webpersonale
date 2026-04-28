@@ -71,23 +71,25 @@
     /* Mobile */
     @media (max-width: 480px) {
         header {
-            align-items: flex-start;
-            gap: var(--size-3);
+            align-items: center;
+            gap: var(--size-2);
             padding-block: var(--size-4);
+            flex-wrap: nowrap;
         }
 
         :global(.brand) {
-            width: 100%;
+            flex-shrink: 0;
         }
 
         div.blur-target {
-            width: 100%;
+            flex-shrink: 0;
         }
 
         nav {
-            width: 100%;
-            gap: var(--size-3);
-            margin-top: var(--size-2);
+            display: flex;
+            gap: var(--size-2);
+            margin-top: 0;
+            flex-shrink: 1;
         }
     }
 </style>

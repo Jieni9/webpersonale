@@ -4,7 +4,7 @@
 
 	const { data } = $props();
 
-	let currentCategory = $state('BLUE');
+	let currentCategory = $state('RED');
 
 	let _initCurrent = $derived.by(() => {
 		if (!data?.years?.length) return null;
